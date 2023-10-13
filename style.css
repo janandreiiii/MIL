@@ -1,6 +1,7 @@
  /* Set a white background color and font */
 body {
-    background-color: white;
+
+    background-color: #E8E9EB;
     color: black;
     font-family: 'Inter', sans-serif;
     padding: 20px;
@@ -12,7 +13,8 @@ body {
   /* Header with floating top navigation */
   nav.topnav {
   position: relative;
-  background-color: #F1F7ED;
+  background-color:  #CCCDC6;
+  opacity: 1;
   height: 40px;
   padding: 10px;
   border-radius: 20px;
