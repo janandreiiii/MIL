@@ -113,3 +113,16 @@ body {
             display: inline-block; /* Make each text container inline-block */
             vertical-align: middle; /* Align vertically in the middle */
         }
+
+         header {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px; /* Adjust the font size as needed */
+            margin: 0;
+        }
+
+        i {
+            font-size: 16px; /* Adjust the font size as needed */
+        }
