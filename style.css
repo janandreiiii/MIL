@@ -1,113 +1,113 @@
-/* Set a white background color and font */
+ /* Set a white background color and font */
 body {
-  background-color: white;
-  color: black;
-  font-family: 'Inter', sans-serif;
-  padding: 20px;
-  font-size: 14pt;
-  margin: 5px;
-
-}
-
-/* Header with floating top navigation */
-nav.topnav {
-position: relative;
-background-color: #F1F7ED;
-height: 40px;
-padding: 10px;
-border-radius: 20px;
-}
-
-a{
- color: black;
- text-decoration: none;
-}
-p3{
-  margin-block-start: 20px;
-  margin-top: 10px;
-}
-h1 {
-  margin: 0px;
-}
-h3{
- color: red;
-}
-p {
-margin-top: 0;
-margin-bottom: 10px;
-color: black;
-}
-nav.topnav {
-  display: flex;
-  justify-content: center;
-}
-
-nav.topnav a {
-  color: inherit;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  font-size: 17px;
-  border-radius: 30px;
-  /* Use 50px for a rounded effect */
-  transition: background-color 0.5s, border-color 0.3s;
-}
-
-nav.topnav a.active {
-  background-color: #6A2E35;
-  border-color: black;
-  color: white;
-}
-
-/* Dropdown menu styles */
-.dropdown {
+    background-color: white;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    font-size: 14pt;
+    margin: 5px;
+  
+  }
+  
+  /* Header with floating top navigation */
+  nav.topnav {
   position: relative;
-  padding: 3px;
-  font-size: 13pt;
-  margin: 5px;
-  margin-bottom: 2px;
-  margin-top: 6px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #FAF4D3;
-  border-radius: 10px;
+  background-color: #F1F7ED;
+  height: 40px;
   padding: 10px;
-  opacity: 100%;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: red;
-  display: block;
-  text-decoration: none;
-  padding: 5px;
-}
-
-.dropdown-content a:hover {
-  background-color: #6A2E35;
-  color: #fff;
-}
-       .container {
-          display: flex; /* Use flexbox for layout */
-      }
-      .image-container {
-          display: inline-block; /* Make each image container inline-block */
-          vertical-align: middle; /* Align vertically in the middle */
-          margin-right: 20px; /* Add some spacing between image and text */
-      }
-      .image-container img {
-          max-width: 200px; /* Set maximum width for the image */
-          height: auto; /* Maintain aspect ratio */
-      }
-      .text-container {
-          display: inline-block; /* Make each text container inline-block */
-          vertical-align: middle; /* Align vertically in the middle */
-      }
+  border-radius: 20px;
+  }
+  
+  a{
+   color: black;
+   text-decoration: none;
+  }
+  p3{
+    margin-block-start: 20px;
+    margin-top: 10px;
+  }
+  h1 {
+    margin: 0px;
+  }
+  h3{
+   color: red;
+  }
+  p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: black;
+  }
+  nav.topnav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav.topnav a {
+    color: inherit;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 30px;
+    /* Use 50px for a rounded effect */
+    transition: background-color 0.5s, border-color 0.3s;
+  }
+  
+  nav.topnav a.active {
+    background-color: #6A2E35;
+    border-color: black;
+    color: white;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown {
+    position: relative;
+    padding: 3px;
+    font-size: 13pt;
+    margin: 5px;
+    margin-bottom: 2px;
+    margin-top: 6px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FAF4D3;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 100%;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: red;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #6A2E35;
+    color: #fff;
+  }
+         .container {
+            display: flex; /* Use flexbox for layout */
+        }
+        .image-container {
+            display: inline-block; /* Make each image container inline-block */
+            vertical-align: middle; /* Align vertically in the middle */
+            margin-right: 20px; /* Add some spacing between image and text */
+        }
+        .image-container img {
+            max-width: 200px; /* Set maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .text-container {
+            display: inline-block; /* Make each text container inline-block */
+            vertical-align: middle; /* Align vertically in the middle */
+        }
