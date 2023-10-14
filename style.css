@@ -1,23 +1,23 @@
  /* Set a white background color and font */
 body {
-
-    background-color: #BBBCB6;
+    background-color: white;
     color: black;
     font-family: 'Inter', sans-serif;
     padding: 20px;
     font-size: 14pt;
-    margin: 5px;
+    margin: null;
   
   }
   
   /* Header with floating top navigation */
   nav.topnav {
   position: relative;
-  background-color:  #CCCDC6;
-  opacity: 1;
+  background-color: #F1F7ED;
   height: 40px;
   padding: 10px;
   border-radius: 20px;
+
+  
   }
   
   a{
@@ -42,11 +42,16 @@ body {
   nav.topnav {
     display: flex;
     justify-content: center;
+    margin-left: 1in;
+    margin-right: inherit;
+
+    
   }
   
   nav.topnav a {
     color: inherit;
-    text-align: center;
+    text-align: relative;
+    position: relative;
     padding: 10px 12px;
     text-decoration: none;
     font-size: 17px;
@@ -113,16 +118,6 @@ body {
             display: inline-block; /* Make each text container inline-block */
             vertical-align: middle; /* Align vertically in the middle */
         }
-
-         header {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 24px; /* Adjust the font size as needed */
-            margin: 0;
-        }
-
-        i {
-            font-size: 16px; /* Adjust the font size as needed */
-        }
+        h1.custom-font {
+          font-family:'Lobster', cursive;
+          }
