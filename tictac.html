@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://tools-static.wmflabs.org/fontcdn/css?family=Inter' rel='stylesheet' type='text/css'>
+    <link href='https://tools-static.wmflabs.org/fontcdn/css?family>Lobster' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="img/jpg" href="https://bit.ly/46IAvsQ">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 class="custom-font">Fernandino Daily</h1>
+            <i><p2>"We deliver news without fear and favor"</p2></i>
+        </center>
+        <br>
+        <!-- Add a navigation bar -->
+        <br>
+        <nav class="topnav">
+            <a href="index.html" class="active">Featured</a>
+            <a href="latest.html">Latest</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="editorial.html">Editorial</a>
+            <!-- Add a dropdown with Projects and its sub-items -->
+            <div class="dropdown">
+                <div class="dropbtn">About us</div>
+                <div class="dropdown-content">
+                    <a href="mission.html">Mission</a>
+                    <a href="vision.html">Vision</a>
+                    <a href="us.html">Journalists</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="board" class="board">
+            <div class="row">
+                <div class="cell" onclick="makeMove(0)"></div>
+                <div class="cell" onclick="makeMove(1)"></div>
+                <div class="cell" onclick="makeMove(2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(3)"></div>
+                <div class="cell" onclick="makeMove(4)"></div>
+                <div class="cell" onclick="makeMove(5)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(6)"></div>
+                <div class="cell" onclick="makeMove(7)"></div>
+                <div class="cell" onclick="makeMove(8)"></div>
+            </div>
+        </div>
+        <p id="message"></p>
+        <button onclick="resetBoard()">Reset</button>
+    </div>
+
+    <style>
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Adjust as needed to center the game board vertically */
+        }
+
+        .board {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        const board = ['', '', '', '', '', '', '', '', ''];
+        let currentPlayer = 'X';
+        let gameActive = true;
+
+        function checkWinner() {
+            const winCombos = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ];
+
+            for (const combo of winCombos) {
+                const [a, b, c] = combo;
+                if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+                    return board[a];
+                }
+            }
+
+            return null;
+        }
+
+        function checkDraw() {
+            return board.every(cell => cell !== '');
+        }
+
+        function makeMove(index) {
+            if (!gameActive || board[index] !== '') {
+                return;
+            }
+
+            board[index] = currentPlayer;
+            document.getElementsByClassName('cell')[index].innerText = currentPlayer;
+
+            const winner = checkWinner();
+            if (winner) {
+                gameActive = false;
+                document.getElementById('message').innerText = `${winner} wins!`;
+            } else if (checkDraw()) {
+                gameActive = false;
+                document.getElementById('message').innerText = "It's a draw!";
+            } else {
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            }
+        }
+
+        function resetBoard() {
+            board.fill('');
+            document.getElementById('message').innerText = '';
+            gameActive = true;
+            currentPlayer = 'X';
+
+            const cells = document.getElementsByClassName('cell');
+            for (const cell of cells) {
+                cell.innerText = '';
+            }
+        }
+    </script>
+</body>
+</html>
+
