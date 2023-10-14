@@ -16,6 +16,8 @@ body {
   height: 40px;
   padding: 10px;
   border-radius: 20px;
+
+  
   }
   
   a{
@@ -38,13 +40,18 @@ body {
   color: black;
   }
   nav.topnav {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    margin-left: 1in;
+    margin-right: inherit;
+
+    
   }
   
   nav.topnav a {
     color: inherit;
-    text-align: center;
+    text-align: relative;
+    position: relative;
     padding: 10px 12px;
     text-decoration: none;
     font-size: 17px;
