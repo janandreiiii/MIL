@@ -1,20 +1,18 @@
  /* Set a white background color and font */
 body {
-
-    background-color: #BBBCB6;
+    background-color: white;
     color: black;
     font-family: 'Inter', sans-serif;
     padding: 20px;
     font-size: 14pt;
-    margin: 5px;
+    margin: null;
   
   }
   
   /* Header with floating top navigation */
   nav.topnav {
   position: relative;
-  background-color:  #CCCDC6;
-  opacity: 1;
+  background-color: #F1F7ED;
   height: 40px;
   padding: 10px;
   border-radius: 20px;
@@ -40,7 +38,7 @@ body {
   color: black;
   }
   nav.topnav {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
   }
   
@@ -113,16 +111,6 @@ body {
             display: inline-block; /* Make each text container inline-block */
             vertical-align: middle; /* Align vertically in the middle */
         }
-
-         header {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 24px; /* Adjust the font size as needed */
-            margin: 0;
-        }
-
-        i {
-            font-size: 16px; /* Adjust the font size as needed */
-        }
+        h1.custom-font {
+          font-family:'Lobster', cursive;
+          }
